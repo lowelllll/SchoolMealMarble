@@ -1,0 +1,150 @@
+﻿User{
+	public int location
+	public String username
+	public int totalmoney
+	public int Money
+	move()
+	POKETMONEY
+	
+	
+	
+	
+}
+
+botUser extends User{
+	public int location
+	public String username
+	public int totalmoney
+	public int Money
+}
+inteface Board{*
+	void forSale() //매각
+	 컴퓨터와  user를 오버라이딩 해서 다르게 메소드 정의.
+	void backruptcy() //파산
+	void scholl;
+	
+}
+school{
+	
+	school(학교이름,매매가)(
+		
+	)
+	String schoolName
+	void schoolNameSet()
+	String owner
+	void ownerSet(String owner)
+	void setbuild(매매가,매매가+100,매매가+300)
+	int getbuild(int n)//n의 개수만큼 반환
+	void setPay(매매가*2)
+	int getPay()
+	 		
+}
+dice{
+	
+}
+place{
+	String placeName
+	 
+}
+main()
+게임시작, 
+	선 선정 firstTurn()//
+	30번 turn
+	선부터 주사위를 굴림	diceRun()//
+	주사위를 굴린 수 대로 이동 move() : userlocaiton이 보드의 맥스를 넘을시 0으로, for문 사용
+		
+	지역 도착/
+		다른 유저를 업을시(다른 유저랑 같은지역에 있을시)Steal()
+			*상대방에게 돈을 뺏김 (현재가진돈에) *user name 
+ 
+			 가진돈이 없을 시 매각()/파산()	*class user,school 			
+		지역이 선도부일시:
+			*내가 1턴동안 주사위를 던지고 행운숫자랑 같지않으면 못나옴  isrand()
+		
+		지역이 매점:
+			* 매점이용권이 있으면 지급 market()
+					
+		//지역이  지각비:late()//
+			* 지각비 80000원 
+			돈이없으면 매각()/파산()
+
+		//지역이 황금카드://
+			*class GoldCard(){}클래스 10개 생성 / 하는일 모두 다름  
+			랜덤으로 실행문을 실행 
+			추천 지역으로 가는 카드/돈을 받는 카드/돈을 뺏는 카드
+		지역이 전학:(GUI) 
+			*전학(
+				전학비 15만원
+				없으면 턴 넘어감
+				있으면 가고싶은 턴을 선택  = 해당 인덱스로 location이동 
+					건물 삼 	
+			)
+				
+		건물안사있으면 
+			 {user현재 가진돈 -> 사시겠습니까? 컴 = 30000<=현재 재산 -건물 매매비 : 건물 삼  아닐 시 안삼ㅋ}
+		사있으면
+			내땅이 아니면 :
+			통행료 돈을 내라. 
+			(통행료 = 지금 건설되있는 건물의 수 )
+			돈이 x 가진돈<통행료 
+				총 재산< 통행료 
+					파산():
+						exit
+					
+				매각/파산?
+				*매각():
+				내가 건설한 지역의 리스트를 가져옴(usename)
+					없을 시 매각 x - > 파산
+					상대방 승리,나 패배
+				통행료<=가진 금액
+					매각할 건물 선택,
+
+				현재 가진돈 = 매각한 건물의 건설비	
+				통행료 지불
+			내땅이면:
+				그냥 지나감
+			
+		
+	파산 종료
+	30턴일때 상대방 총 재산?나의 총 재산 비교 후 종료
+	
+				 
+게임방법
+
+
+순서
+
+
+while{
+int flag;
+
+
+flag=1;
+	나{if flag==1
+
+	flag=0;
+}
+
+	컴퓨터{if flag==0
+
+
+	flag=1
+
+	}
+}
+
+
+일정
+
+선을 정할때 user 가 선이면 
+vector(0) 에 유저 객체를 넣고
+vector(1) 에 컴퓨터 객체를 넣는다. 
+
+
+도착했을때 비교 순서
+	땅이 특별지역인가?
+		
+	
+	아닌가?
+
+
